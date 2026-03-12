@@ -90,3 +90,4 @@ docker/
 !/config/.gitkeep
 
 Session.vim
+.DS_Store
