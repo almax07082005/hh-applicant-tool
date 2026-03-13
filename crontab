@@ -22,6 +22,6 @@ SHELL=/bin/bash
 */1 * * * * /usr/local/bin/python -m hh_applicant_tool refresh-token
 
 # Раскомментируй, если хочешь удалять чаты с отказами
-*/15 * * * * /bin/bash -c 'sleep $((60 + RANDOM \% 241))' && /usr/local/bin/python -m hh-applicant-tool clear-negotiations -d >> /var/log/cron.log 2>&1
+*/15 * * * * /bin/bash -c 'sleep $((60 + RANDOM \% 241))' && /usr/local/bin/python -m hh_applicant_tool clear-negotiations -d >> /var/log/cron.log 2>&1
 
 #*/1 * * * * echo "Cron is alive at $(date)" >> /var/log/cron.log 2>&1
